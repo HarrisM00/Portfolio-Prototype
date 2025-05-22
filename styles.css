@@ -1,6 +1,5 @@
 body {
   background-color: black;
-  color: white;
 }
 
 .header-bar {
@@ -22,21 +21,17 @@ body {
   padding: 20px;
 }
 
-/* Light Mode Overrides */
-.light-mode {
-  background-color: white;
-  color: black;
-}
-
-.light-mode .img-placeholder {
-  background-color: #e0e0e0;
-}
-
-.light-mode .header-bar {
-  background-color: #ddd;
-}
-
-.light-mode .btn-outline-light {
-  color: black;
-  border-color: black;
+/* Responsive tweaks for small screens */
+@media (max-width: 576px) {
+  .img-placeholder {
+    height: 100px;
+    font-size: 1rem;
+  }
+  .header-bar {
+    padding: 15px 0;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
 }
