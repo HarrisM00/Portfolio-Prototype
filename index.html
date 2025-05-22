@@ -9,6 +9,19 @@
 </head>
 <body>
 
+<!-- 
+✅ What’s Complete:
+- Navigation between 3 pages
+- Bootstrap layout & styling
+- Image placeholders and project structure
+- Dark/Light Mode button (interactive feature)
+
+🛠️ What’s Left:
+- Replace placeholder text and images with real content
+- Improve mobile responsiveness
+- Possibly add animations or additional JS interactivity
+-->
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -28,6 +41,11 @@
     <h2 class="text-success">HEADING</h2>
   </div>
 
+  <!-- Toggle Button -->
+  <div class="text-center m-3">
+    <button class="btn btn-outline-light" onclick="toggleMode()">Toggle Light/Dark Mode</button>
+  </div>
+
   <!-- Image Grid --> 
   <div class="container-fluid content-section">
     <div class="row justify-content-center">
@@ -40,5 +58,10 @@
     </div>
   </div>
 
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
 </body>
 </html>

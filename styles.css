@@ -1,23 +1,42 @@
 body {
-    background-color: black;
-  }
-  
-  .header-bar {
-    background-color: grey;
-    padding: 20px 0;
-  }
-  
-  .img-placeholder {
-    background-color: lightgrey;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-  
-  .content-section {
-    padding: 20px;
-  }
-  
+  background-color: black;
+  color: white;
+}
+
+.header-bar {
+  background-color: grey;
+  padding: 20px 0;
+}
+
+.img-placeholder {
+  background-color: lightgrey;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.content-section {
+  padding: 20px;
+}
+
+/* Light Mode Overrides */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.light-mode .img-placeholder {
+  background-color: #e0e0e0;
+}
+
+.light-mode .header-bar {
+  background-color: #ddd;
+}
+
+.light-mode .btn-outline-light {
+  color: black;
+  border-color: black;
+}

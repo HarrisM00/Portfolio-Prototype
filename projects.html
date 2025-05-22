@@ -28,6 +28,11 @@
     <h2 class="text-success">PROJECTS</h2>
   </div>
 
+  <!-- Toggle Button -->
+  <div class="text-center m-3">
+    <button class="btn btn-outline-light" onclick="toggleMode()">Toggle Light/Dark Mode</button>
+  </div>
+
   <!-- Projects Grid -->
   <div class="container-fluid content-section">
     <div class="row justify-content-center">
@@ -40,5 +45,10 @@
     </div>
   </div>
 
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
 </body>
 </html>
